@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head >
+    <meta charset="utf-8">
+    <title>FORM!</title>
+
+  </head>
+  <body>
+    <h1> Fill out the form!</h1>
+
+    <div class="container">
+
+      <form method="post">
+
+      {{ form.as_p }} <!-- as.p: form will be displayed top to bottom and not right to left -->
+
+      {% csrf_token %}
+
+      <input type="submit" name="btn btn-primary" value="Submit">
+
+      </form>
+
+    </div>
+
+  </body>
+</html>
